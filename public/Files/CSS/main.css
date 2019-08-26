@@ -1,0 +1,382 @@
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.footer {
+    font-family: "Roboto Slab", serif;
+}
+
+html,
+body {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 989px) {
+    body {
+        overflow-x: initial;
+    }
+}
+
+.logo {
+    width: 200px;
+}
+
+.navbar-nav,
+text-center {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* css for dropdown on hover */
+.navbar-nav li:hover .dropdown-menu {
+    display: block;
+    transition-timing-function: linear;
+}
+
+/* a:hover {
+    border-bottom-color: #64ebea;
+} */
+
+.extrabuttons {
+    float: end;
+}
+
+ion-icon {
+    font-size: 30px;
+    color: black;
+}
+
+ion-icon:hover {
+    color: grey;
+}
+
+/* //services overlay effect start */
+
+.overlay .title {
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content {
+    position: relative;
+    overflow: visible;
+}
+
+.content .content-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+    opacity: 1;
+}
+
+.content-image {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 767px) {
+    .content-image {
+        width: auto;
+        height: auto;
+    }
+}
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+    top: 50%;
+    left: 55%;
+    opacity: 1;
+}
+
+.content-details h3 {
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.fadeIn-left {
+    left: 20%;
+}
+
+/* services overlay effect end */
+
+.wtgr {
+    height: 400px;
+    width: 400px;
+}
+
+.serial {
+    height: 100px;
+    width: 100px;
+}
+
+.productimage {
+    height: 250px;
+    width: 250px;
+}
+
+.footerimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 106px;
+}
+
+@media only screen and (max-width: 767px) {
+    .footerimg {
+        width: auto;
+        height: auto;
+    }
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.aboutimg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+/* search bar styling */
+
+.corporatetop img,
+.contactusimg {
+    width: 100%;
+    height: auto;
+}
+
+.corporatetext {
+    font-family: "Roboto Slab";
+    font-size: 19px;
+    text-justify: auto;
+}
+
+.videoimg {
+    width: 100%;
+    height: auto;
+}
+
+#header {
+    background-image: url("../../Files/Image/loginformbg.jpg");
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cartimg {
+    width: 40%;
+}
+
+/* item quntity selector */
+
+.plusminus {
+    display: inline-block;
+    position: relative;
+    font-size: 0;
+    overflow: hidden;
+    border-radius: 3px;
+    width: 44px;
+    height: 132px;
+}
+.plusminus button {
+    display: block;
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #000;
+    color: #fff;
+    font-size: 30.8px;
+    line-height: 1;
+    font-family: bonds, sans-serif;
+    cursor: pointer;
+    -moz-transition: color 200ms;
+    -o-transition: color 200ms;
+    -webkit-transition: color 200ms;
+    transition: color 200ms;
+}
+.plusminus button:focus {
+    outline: none;
+    color: #2bebaf;
+}
+.plusminus button:disabled {
+    background: #999;
+    color: #ccc;
+    cursor: default;
+}
+/* .plusminus button:first-child {
+    bottom: 0;
+}
+.minus {
+    content: "-";
+}
+.plusminus button:last-child {
+    top: 0;
+}
+.plus {
+    content: "+";
+} */
+.plusminus button:last-child:focus {
+    color: #ff6367;
+}
+.plusminus input[type="number"] {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    top: 44px;
+    margin: 0;
+    padding: 0 0 16.92308px;
+    border: 0;
+    font-size: 17.6px;
+    font-weight: bold;
+    text-align: center;
+    -moz-appearance: textfield;
+}
+.plusminus input[type="number"]::-webkit-outer-spin-button,
+.plusminus input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.plusminus:after {
+    content: "QTY";
+    position: absolute;
+    font-size: 9.68px;
+    left: 0;
+    right: 0;
+    line-height: 1;
+    padding: 3.52px 0 3.52px 0;
+    width: 44px;
+    margin: 0 auto;
+    border-top: 1px solid #ccc;
+    color: #888;
+    text-align: center;
+    bottom: 34%;
+}
+.plusminus.horiz {
+    width: 132px;
+    height: 44px;
+}
+.plusminus.horiz button:first-child {
+    left: 0;
+}
+.plusminus.horiz button:last-child {
+    right: 0;
+}
+.plusminus.horiz:after {
+    bottom: 0;
+}
+.plusminus.horiz input[type="number"] {
+    position: absolute;
+    top: 0;
+    left: 44px;
+}
+.plusminus.stacked {
+    width: 88px;
+    height: 88px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.plusminus.stacked:after {
+    width: 100%;
+    bottom: 50%;
+}
+.plusminus.stacked button {
+    float: none;
+    top: auto;
+    bottom: 0;
+}
+.plusminus.stacked button:first-child {
+    left: 0;
+}
+.plusminus.stacked button:last-child {
+    right: 0;
+}
+.plusminus.stacked input[type="number"] {
+    top: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 1px solid #eee;
+    width: 100%;
+}
+.plusminus.stacked input[type="number"]:after {
+    width: 100%;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 5rem;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.btn {
+    background-color: #73d0d7;
+}
+ .btn a{
+     color: white;
+ }
+
+ .main-text{
+     font-family: 'Roboto', slab;
+     font-size: 40px;
+     padding: 0;
+     margin: 0;
+ }
+
+ .sub-text{
+     font-family: "Poppins", sans-serif;
+ }
+
+ .product-description-image{
+    padding: 5px; 
+    width: 100%;
+ }
+
+ .about-product ul{
+     list-style: none;
+ }
